@@ -1,0 +1,19 @@
+<div class="ticket-container">
+  <div class="title_ticket">
+    <div class="folio"> Folio: {{ folio }} </div>
+    <div class="department"> {{ department }} </div>
+    <div class="date"> {{ date }} </div>
+  </div>
+  <div class="title_ticket">
+    <div class="customer"> {{ customer }} </div>
+    <div class="email"> {{ email }} </div>
+  </div>
+
+  <div class="body_ticket">
+    {{ description }}
+  </div>
+  <div class="footer_ticket">
+    <span id="final_price"> {{ finalPrice | currency}} </span>
+  </div>
+
+</div>

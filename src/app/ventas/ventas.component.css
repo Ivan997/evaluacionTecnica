@@ -1,0 +1,44 @@
+.ventas-container {
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.venta-card{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 20px 20px 60px #e3e3e3, -20px -20px 60px #ffffff;
+  cursor: pointer;
+}
+.venta-card:hover{
+  box-shadow: 20px 20px 60px #bababa, -20px -20px 60px #ffffff;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+}
+.venta-card:active{
+  box-shadow: inset 20px 20px 60px #bababa, inset -20px -20px 60px #ffffff;
+}
+
+.venta-card .card_title{
+  text-align: center;
+}
+
+.venta-card .card_component {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.venta-card .card_title,
+.venta-card .card_description{
+  width: 100%;
+}

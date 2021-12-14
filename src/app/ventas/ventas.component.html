@@ -1,0 +1,10 @@
+<div class="ventas-container">
+  <div class="venta-card" *ngFor="let item of itemsVentas" [routerLink]="['/ticket']" [queryParams]="{ sale_id: item.sale_id }"queryParamsHandling="merge">
+    <span class="card_title order_id"> Folio: <strong>{{ item.sale_id }}</strong>  </span>
+    <div class="card_component">
+      <span class="department"> {{ item.department }} </span>
+      <span class="price"> {{ item.price | currency }} </span>
+    </div>
+    <p class="card_description"> {{ item.description }} </p>
+  </div>
+</div>
